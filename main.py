@@ -25,4 +25,6 @@ def movie(message):
         InlineKeyboardButton("🎬 Manjummel Boys - Trailer", url="https://www.youtube.com/results?search_query=Manjummel+Boys+Trailer"),
         InlineKeyboardButton("🎟️ Manjummel Boys - Hotstar", url="https://www.hotstar.com/in")
     )
-    bot.reply_to(message, "🎬 *Latest Movies*\n\n1.
+    bot.reply_to(message, "🎬 *Latest Movies*\n\n1.", parse_mode='Markdown', reply_markup=markup)
+
+bot.polling()
